@@ -10,7 +10,7 @@ li {
 list-style-type: none;
 display: inline-block;
 }
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {*/
 
 .calculator {
   border-width: 1px;
@@ -44,7 +44,7 @@ display: inline-block;
   border-color: black;
   padding: 10px;
   width: 40px;
-  float: right;
+
 }
 
 .operatorsBox ul {
