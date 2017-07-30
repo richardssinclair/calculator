@@ -8,45 +8,72 @@
   <title>Calculator</title>
 </head>
 <body>
-<div class="calculator">
 
-  <ul>
-    <li>
-      <input type="text" class="display">
-    </li>
-    <li>
+  <div class="calculator">
+
+    <div class="screen">
       <ul>
-        <li><input type="button" value="7" class="number"></li>
-        <li><input type="button" value="8" class="number"></li>
-        <li><input type="button" value="9" class="number"></li>
-        <li><input type="button" value="/" class="operator"></li>
+        <li>
+          <input type="text" class="display">
+          <!-- <li><input type="text" class="savedMaths"></li> -->
+        </li>
       </ul>
-    </li>
-    <li>
+    </div>
+
+    <div class="numbers">
+      <li>
+        <ul>
+          <li><input type="button" value="7" class="number"></li>
+          <li><input type="button" value="8" class="number"></li>
+          <li><input type="button" value="9" class="number"></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><input type="button" value="4" class="number"></li>
+          <li><input type="button" value="5" class="number"></li>
+          <li><input type="button" value="6" class="number"></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><input type="button" value="1" class="number"></li>
+          <li><input type="button" value="2" class="number"></li>
+          <li><input type="button" value="3" class="number"></li>
+        </ul>
+      </li>
       <ul>
-        <li><input type="button" value="4" class="number"></li>
-        <li><input type="button" value="5" class="number"></li>
-        <li><input type="button" value="6" class="number"></li>
-        <li><input type="button" value="-" class="operator"></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><input type="button" value="1" class="number"></li>
-        <li><input type="button" value="2" class="number"></li>
-        <li><input type="button" value="3" class="number"></li>
-        <li><input type="button" value="*" class="operator"></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><input type="button" value="clear" class="clear"></li>
         <li><input type="button" value="0" class="number"></li>
-        <li><input type="button" value="=" class="equals"></li>
-        <li><input type="button" value="+" class="operator"></li>
+        <li><input type="button" value="." class="operator"></li>
       </ul>
-    </li>
-  </ul>
-</div>
+    </div>
+
+    <div class="operatorsBox">
+      <li>
+        <ul>
+          <li><input type="button" value="+" class="operator"></li>
+          <li><input type="button" value="-" class="operator"></li>
+          <li><input type="button" value="*" class="operator"></li>
+          <li><input type="button" value="/" class="operator"></li>
+          <li><input type="button" value="=" class="equals"></li>
+        </ul>
+      </li>
+    </div>
+
+    <div class="otherButtons">
+      <li>
+        <ul>
+          <li><input type="button" value="clear" class="clear"></li>
+          <li><input type="button" value="save" class="save"></li>
+        </ul>
+      </li>
+    </div>
+
+    <div class="saveBox">
+      <input type="text" class="display">
+  </div>
+
+
+  </div>
 </body>
 </html>

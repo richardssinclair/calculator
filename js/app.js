@@ -65,6 +65,9 @@ function calculate(){
     case '/':
       answer = firstNumber / secondNumber
       break
+      case '.':
+        answer = firstNumber.secondNumber
+        break
     default:
       break;
   };
