@@ -31,6 +31,8 @@ function start(){
 
   var save      = document.getElementsByClassName('save')[0];
 
+  var clear = document.getElementsByClassName('clear')[0];
+
 
   //for loop, runs through the html and goes through all the numbers adding event listeners
   for (var i = 0; i < numbers.length; i++) {
@@ -45,6 +47,8 @@ function start(){
   equals.addEventListener('click', calculate);
 
   save.addEventListener('click', saveMaths);
+
+  clear.addEventListener('click', clearScreen)
 }
 
 function setNumber() {
@@ -86,6 +90,7 @@ function calculate(){
       console.log(operator)
   };
   updateDisplay(answer);
+  firstNumber = answer;
   // console.log(operator);
 }
 
@@ -99,7 +104,14 @@ function saveMaths(){
   var name = prompt("Enter a name for this calculation");
   var list = document.getElementById('savedItems');
   var entry = document.createElement('li');
-  entry.appendChild(document.createTextNode(name + '-' + answer));
+  entry.appendChild(document.createTextNode(name + ' : ' + answer));
   list.appendChild(entry);
 
+}
+
+function clearScreen(){
+  updateDisplay('');
+  answer = undefined;
+  firstNumber = undefined;
+  secondNumber = undefined;
 }

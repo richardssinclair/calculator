@@ -1,9 +1,8 @@
-
-
 ul {
   margin: 0 auto;
-  width: 340px;
+  /*width: 500px;*/
   padding: 0;
+  display: block;
 }
 
 li {
@@ -13,29 +12,39 @@ display: inline-block;
 /*@media (max-width: 600px) {*/
 
 .calculator {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
-  width: 200px;
-  background-color:
+
 }
 
 .screen {
+  height: 20px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
   padding: 10px;
+  width: 100%
+
 }
 
 .numbers {
+  width: 15%;
   border-width: 1px;
   border-style: solid;
   border-color: black;
   padding: 10px;
-  display: inline-block;
-  width: 100px;
 
+}
+.numbers input {
+  width: 50px;
+}
+
+input {
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .operatorsBox {
@@ -43,11 +52,10 @@ display: inline-block;
   border-style: solid;
   border-color: black;
   padding: 10px;
-  width: 40px;
+  width: 3%;
 
 }
-
-.operatorsBox ul {
+.operatorsBox ul li {
   display: inline-grid;
 }
 
@@ -56,6 +64,7 @@ display: inline-block;
   border-style: solid;
   border-color: black;
   padding: 10px;
+  width: 5%;
 
 }
 
@@ -64,5 +73,9 @@ display: inline-block;
   border-style: solid;
   border-color: black;
   padding: 10px;
+  width: 15%;
 
+}
+#savedItems li {
+  display: block;
 }

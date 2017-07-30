@@ -1,12 +1,9 @@
 ## Calculator
 
-campaigns
-2 products
+I chose to use plain Vanilla JavaScript just to go back to the basics.
 
-var numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+I found this task quite challenging. I really struggled with the javascript section of the project but it is an aspect I really enjoy learning about. Trying to solve or tackle problems is something I really want to improve on and I think with more time and more practice I will get there.
 
-var operators = [ *, -, +, / ]
+I did quite a bit of research, watched a few tutorials and looked through documentation and walk though examples to get to this result.
 
-var calculation = numbers + operators + numbers
-
-var saveCalc = calculation
+I used flex to style the calculator, I thought it would be the best way to order and display things.
