@@ -9,36 +9,6 @@ li {
 list-style-type: none;
 display: inline-block;
 }
-/*@media (max-width: 600px) {*/
-
-.calculator {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-
-}
-
-.screen {
-  height: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  width: 100%
-
-}
-
-.numbers {
-  width: 15%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-
-}
-.numbers input {
-  width: 50px;
-}
 
 input {
   border: none;
@@ -47,12 +17,41 @@ input {
   font-size: 15px;
 }
 
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 600px;
+
+}
+
+.screen {
+
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 86%
+}
+
+.numbers {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 30%;
+}
+.numbers input {
+  width: 50px;
+}
+
 .operatorsBox {
   border-width: 1px;
   border-style: solid;
   border-color: black;
   padding: 10px;
-  width: 3%;
+  width: 5%;
 
 }
 .operatorsBox ul li {
@@ -64,7 +63,7 @@ input {
   border-style: solid;
   border-color: black;
   padding: 10px;
-  width: 5%;
+  width: 15%;
 
 }
 
@@ -73,9 +72,54 @@ input {
   border-style: solid;
   border-color: black;
   padding: 10px;
-  width: 15%;
+  width: 25%;
 
 }
 #savedItems li {
   display: block;
 }
+
+
+/*tablet*/
+@media (max-width: 750px) {
+
+  .calculator {
+    flex-flow: row wrap;
+  }
+  /*.screen {
+    order: <1>;
+  }
+  .numbers {
+    order: 2;
+  }
+  .operatorsBox {
+    order: 3;
+  }
+
+  .otherButtons{
+    order: 4;
+  }
+  .saveBox {
+    order: 5;
+  }*/
+
+
+
+
+
+
+/*phone*/
+@media (max-width: 450px) {
+.calculator {
+  flex-flow: row wrap;
+}
+  .otherButtons{
+  }
+  .saveBox {
+  }
+  .operatorsBox {
+  }
+  .numbers {
+  }
+  .screen {
+  }
