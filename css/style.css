@@ -1,6 +1,5 @@
 ul {
   margin: 0 auto;
-  /*width: 500px;*/
   padding: 0;
   display: block;
 }
@@ -8,7 +7,6 @@ ul {
 li {
   list-style-type: none;
   display: inline-block;
-
 }
 
 input {
@@ -16,15 +14,13 @@ input {
   background: none;
   padding: 10px;
   font-size: 15px;
-
 }
 
 .calculator {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  max-width: 550px;
-
+  max-width: 560px;
 }
 
 .screen {
@@ -45,7 +41,6 @@ input {
   border-style: solid;
   border-color: black;
   padding: 5px 30px;
-  /*width: 40%;*/
   justify-content: space-between;
 }
 
@@ -67,8 +62,8 @@ input {
   border-style: solid;
   border-color: black;
   padding: 10px;
-
 }
+
 .operatorsBox ul {
   border-width: 1px;
   border-style: solid;
@@ -83,8 +78,6 @@ input {
   border-style: solid;
   border-color: black;
   padding: 10px;
-  /*width: 15%;*/
-
 }
 
 .saveBox {
@@ -92,38 +85,27 @@ input {
   border-style: solid;
   border-color: black;
   padding: 10px;
-  /*width: 25%;*/
 
 }
 #savedItems li {
   display: block;
 }
 
-
-
 /*tablet*/
-@media (max-width: 580px) {
+@media (max-width: 593px) {
 
   .calculator {
     flex-wrap: wrap;
   }
 
-  .screen {
-  }
-
   .numbers {
-
     width: 70%;
-
   }
-
-
 
   .operatorsBox {
     flex-direction: column;
     flex-flow: column;
   }
-
 
   .otherButtons{
     display: flex;
@@ -141,37 +123,32 @@ input {
 @media (max-width: 450px) {
 
   .calculator {
-    max-width: 400px;
+    max-width: 300px;
     flex-direction: column;
   }
 
   .screen {
+    width: 100%;
   }
 
   .numbers {
     display: flex;
-    width: 90%;
+    width: 260px;
   }
 
   .operatorsBox {
-
-    /*display: flex;*/
     flex-direction: row;
   }
 
   .operatorsBox ul {
     flex-direction: row;
     display: inline-flex;
-    width: 105%;
+    width: 320px;
     justify-content: center;
   }
 
-  .otherButtons{
-
-  }
   .saveBox {
     order: 5;
   }
-
 
 }
