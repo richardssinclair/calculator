@@ -10,16 +10,6 @@ var savedMaths;
 var answer
 
 
-//SAVE: Press to save your current math into Saved Maths. When pressed, the user will be
-// prompt to submit a name
-
-// Saved Maths: List of selectable maths. Maths should be ordered by date and time Math Name/Date: Press to display the selected math in Result
-
-// DELETE: Remove a saved Math Name/Date from Saved Maths
-
-// CANCEL: Press to reset Result
-
-
 //the function that makes the calculator work
 function start(){
   //gets the numbers elements using thier classes from html
@@ -32,7 +22,6 @@ function start(){
   var save      = document.getElementsByClassName('save')[0];
 
   var clear = document.getElementsByClassName('clear')[0];
-
 
   //for loop, runs through the html and goes through all the numbers adding event listeners
   for (var i = 0; i < numbers.length; i++) {
@@ -50,6 +39,7 @@ function start(){
 
   clear.addEventListener('click', clearScreen)
 }
+
 
 function setNumber() {
   //the value in the display,
@@ -69,6 +59,7 @@ function setOperator(){
   operator = this.value;
   console.log(firstNumber, operator, secondNumber);
 }
+
 //this function performs the calculations, using a switch statement for the opperators and using the variables first and second number
 function calculate(){
 
@@ -91,24 +82,25 @@ function calculate(){
   };
   updateDisplay(answer);
   firstNumber = answer;
-  // console.log(operator);
 }
 
+//function for updating the display of the calculator with the final answer
 function updateDisplay(value){
   var display = document.getElementsByClassName('display')[0];
   display.value = value;
 }
 
-
+//function that saves the answer with a prompt
 function saveMaths(){
   var name = prompt("Enter a name for this calculation");
   var list = document.getElementById('savedItems');
   var entry = document.createElement('li');
-  entry.appendChild(document.createTextNode(name + ' : ' + answer));
+  entry.appendChild(document.createTextNode(answer + ' : ' + name));
   list.appendChild(entry);
 
 }
 
+//function that clears the display and lets you make other calculations using the final answer or using new firstNumber or secondNumber
 function clearScreen(){
   updateDisplay('');
   answer = undefined;

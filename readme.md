@@ -1,9 +1,9 @@
-## Calculator
+##Build a Calculator
 
-I chose to use plain Vanilla JavaScript just to go back to the basics.
+For this calculator I used plain vanilla JavaScript just to go back to the basics.
 
-I found this task quite challenging. I really struggled with the javascript section of the project but it is an aspect I really enjoy learning about. Trying to solve or tackle problems is something I really want to improve on and I think with more time and more practice I will get there.
+I didn't use a css framework as I wanted to try and style it from scratch, so I used flex box for the styling, I thought it would be the best way to order and display things.
 
-I did quite a bit of research, watched a few tutorials and looked through documentation and walk though examples to get to this result.
+<img src="http://imgur.com/Q0keBV5" class="fit image">
 
-I used flex to style the calculator, I thought it would be the best way to order and display things.
+Try it here: [Calculator](https://codepen.io/richardssinclair/pen/yXaXMV)
